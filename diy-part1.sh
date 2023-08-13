@@ -19,7 +19,5 @@
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 git pull
-git branch -a
-git checkout v19.07.8
 git clone https://github.com/wiwizcom/WiFiPortal.git package/WiFiPortal
 
