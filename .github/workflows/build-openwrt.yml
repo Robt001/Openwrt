@@ -59,8 +59,8 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        # git clone $REPO_URL -b $REPO_BRANCH openwrt
-        git clone -b 23.05 --single-branch https://github.com/Lienol/openwrt
+        git clone $REPO_URL -b $REPO_BRANCH openwrt
+        # git clone -b 23.05 --single-branch https://github.com/Lienol/openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: 加载自定义软件包
